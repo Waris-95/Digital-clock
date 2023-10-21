@@ -64,7 +64,7 @@ body.dark-theme .clock {
 
 
 .container {
-    width: 800px;
+    width: 80%;
     height: 180px;
     position: absolute;
     top: 50%;
@@ -121,13 +121,25 @@ body.dark-theme .clock {
     z-index: -1;
 }
 
-.clock span{
+.clock span {
     font-size: 80px;
-    width: 110px;
+    width: 100px; 
     display: inline-block;
     text-align: center;
     position: relative;
+    margin: 0 20px; /* Add margin to create spacing between elements */
+    margin-bottom: 1px;
+
 }
+
+.clock span::after {
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 .clock span::after{
 
@@ -140,14 +152,17 @@ body.dark-theme .clock {
 
 #hrs::after {
     content: 'HOUR';
+    margin-top: 10px;
 
 }
 #mins::after {
     content: 'MINS';
+    margin-top: 10px;
 }
 
 #secs::after {
     content: 'SECS';
+     margin-top: 10px;
 }
 
 /* Dark Theme Styles */
@@ -204,3 +219,9 @@ body.dark-theme .clock {
     }
 }
 
+@media screen and (max-width: 600px){
+    /* .container { */
+        .container span {
+        font-size: 50px;
+    }    
+}
