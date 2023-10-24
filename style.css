@@ -127,7 +127,7 @@ body.dark-theme .clock {
     display: inline-block;
     text-align: center;
     position: relative;
-    margin: 0 20px; /* Add margin to create spacing between elements */
+    margin: 0 1px; /* Add margin to create spacing between elements */
     margin-bottom: 1px;
 
 }
