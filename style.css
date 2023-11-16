@@ -239,7 +239,7 @@ body.dark-theme .clock {
     padding: 10px;
     text-align: center;
     font-family: Arial, sans-serif;
-    border-top: 1px solid #dddddd;
+    /* border-top: 1px solid #dddddd; */
     position: relative; /* Ensure the filter affects only the content below the footer */
     z-index: 2; /* Higher than the content beneath */
 }
@@ -251,7 +251,7 @@ body.dark-theme .clock {
 }
 
 .footer a {
-    color: #333;
+    color: #75757579;
     text-decoration: none;
     transition: color 0.5s;
     font-weight: bold;
