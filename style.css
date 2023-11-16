@@ -225,3 +225,39 @@ body.dark-theme .clock {
         font-size: 50px;
     }    
 }
+
+@media screen and (max-width: 768px){
+    /* .container { */
+        .container span {
+        font-size: 50px;
+    }    
+}
+
+.footer {
+    background: url('images/gradient.gif') no-repeat center center fixed;
+    backdrop-filter: blur(10px); /* Blurring the content below the footer */
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #dddddd;
+    position: relative; /* Ensure the filter affects only the content below the footer */
+    z-index: 2; /* Higher than the content beneath */
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #c36cbb;
+    text-decoration: underline;
+}
