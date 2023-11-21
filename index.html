@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Digital Clock with HTML, CSS & JavaScript</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="hero">
-            <!--THEME SWITCH-->
-            <button id="themeSwitcher">Switch Theme</button>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock with HTML, CSS & JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="hero">
+        <!--THEME SWITCH-->
+        <button id="themeSwitcher">Switch Theme</button>
 
-            <div class="container">
-                <div class="clock">
-                    <span id="hrs">00</span>
-                    <span>:</span>
-                    <span id="mins">00</span>
-                    <span>:</span>
-                    <span id="secs">00</span>
-                </div>
+        <div class="container">
+            <div class="clock">
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="mins">00</span>
+                <span>:</span>
+                <span id="secs">00</span>
+            </div>
+            
+            <!--Quotes--> 
+            <div class="quote">
+                <p id="dailyQuote">Fetching quote...</p>
+                <button id="refreshQuote" class="fancy-button">Refresh Quote</button>
+            </div>
         </div>
     </div>
 
-	<footer class="footer">
+    <footer class="footer">
         <p>Created by: Abdul Waris</p>
-            <p><a href="https://github.com/Waris-95" target="_blank">Gthub</a></p>
-        <p><a href="https://www.linkedin.com/in/abdul-waris-aa1234aw/" target="_blank">LinkedIn </a></p>
+        <p><a href="https://github.com/Waris-95" target="_blank">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/abdul-waris-aa1234aw/" target="_blank">LinkedIn</a></p>
     </footer>
 
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+

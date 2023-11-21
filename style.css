@@ -261,3 +261,81 @@ body.dark-theme .clock {
     color: #c36cbb;
     text-decoration: underline;
 }
+
+
+/* Styles for the quote container */
+.quote {
+    background: linear-gradient(145deg, #6dd5ed34, #2193b023); /* A cool gradient background */
+    border: 1px solid transparent; /* Removed the solid border */
+    padding: 20px;
+    margin: 20px auto; /* Centered the quote container */
+    text-align: center;
+    border-radius: 20px; /* More pronounced rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for more depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+    max-width: 600px; /* Set a max-width for larger screens */
+  }
+  
+  /* Styles for the quote text */
+  #dailyQuote {
+    font-style: italic;
+    color: #fff; /* Ensured text color is white for better readability */
+    font-size: 1.4em; /* Larger font size for emphasis */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    transition: color 0.3s ease; /* Smooth transition for text color changes */
+  }
+  
+  /* Hover effect for the container */
+  .quote:hover {
+    transform: translateY(-10px); /* Lift the quote container on hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  /* Styling for the button */
+  .fancy-button {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white for the button */
+    border: 2px solid #fff; /* Added a white border */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px; /* Fully rounded ends for the button */
+    box-shadow: 0 7px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.4s; /* Smooth transition for all the effects */
+    text-transform: uppercase; /* Capitalize the button text */
+    letter-spacing: 1px; /* Spacing out the letters a little */
+  }
+  
+  /* Button hover effect */
+  .fancy-button:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly darker on hover */
+    color: #6dd5ed34; /* Changing text color on hover for a vibrant effect */
+    border-color: #6dd5ed2e; /* Border color transitions to match the text */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 20px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  /* Button active/click effect */
+  .fancy-button:active {
+    transform: translateY(2px); /* Subtle button press effect */
+    box-shadow: 0 3px #666; /* Shadow effect to mimic the button being pressed */
+  }
+  
+  /* Add an animation effect to the background */
+  @keyframes background-slide {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Apply the animation to the quote container */
+  .quote {
+    background-size: 200% 200%; /* Prepare the background for animation */
+    animation: background-slide 10s ease infinite; /* Apply the animation */
+  }
+  
+
